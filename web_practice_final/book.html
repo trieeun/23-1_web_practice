@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+    <style type="text/css">
+        .container {
+            padding: 20px;
+        }
+
+        .choice {
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1000px;
+            border: 1px solid rgb(237, 247, 245);
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0, 1);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .choice:hover {
+            background-color: rgb(183, 215, 216)
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            font-weight: 400;
+            line-height: 1.5;
+            margin: 0 0 0.8em 0;
+        }
+
+        h3 {
+            margin: 4px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        blockquote {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            padding-left: 20px;
+            border-left: 6px solid rgb(183, 215, 216);
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>독서</h2>
+
+
+        <div class="choice">
+            <p>자주, 많이 읽지는 못하지만 꾸준히 독서량을 늘리기 위해 노력하고 있으며 2022년에 숙명독서인증제에도 참여하였다. 심리서적이나 수필/에세이를 읽는 것을 좋아한다.<br>
+                특히 &lt;나도 아직 나를 모른다&gt;의 책 내용 중 &quot;실패에 우아할 것&quot;이라는 글을 인상깊게 읽었고 가끔 불안하고 힘들 때 읽는다. </p>
+        </div>
+        <div class="choice">
+            <h3>&lt;나도 아직 나를 모른다&gt; (저자:허지원)</h3>
+            <blockquote cite="http://www.psychiatricnews.net/news/articleView.html?idxno=11210">
+                어떤 경우에는 고통스럽게 아파도 내 의지와 바람과는 상관없이 결국 안 되는 건 안 되는 것임을 알고 또 그것이 아주 그렇게 당신 탓인 것은 아님을 부디 알고 당신이 누군가에게 거대한 민폐를 끼치는 사람은 아니라는 것을 알아가면서 낮아진 외현적 자존감을 보상하기 위해 기이하게 커진 자의식도 내려놓았으면 좋겠습니다. 당신 탓이 아니에요. 실패에 한없이 추락하는 기분이 든다 해도 그 기분이 당신의 어떤 측면도 감히 규정할 수 없다는 것을 알기를 바랍니다.
+            </blockquote>
+            <blockquote cite="http://www.psychiatricnews.net/news/articleView.html?idxno=11210">
+                기대를 하지 않으려 애쓰지 마세요. 당신의 기대는 한 번도 죄였던 적이 없습니다. 당신은 그냥 순수하게 기대했던 것뿐이고 당신의 기대가 그대로 이루어질 것이라는 믿음은 아무 이유 없이 운 좋게 성취될 때도 있고 그저 아무 이유 없이 무너질 때도 있습니다. 기대는 죄가 없고, 당신도 죄가 없습니다. 그냥 상황이 그랬습니다.
+            </blockquote>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="choice">
+        <form>
+            책 속 글귀 공유 : <input type="text" id="name" size="100">
+        </form>
+        입력 버튼 누른 후 글귀를 입력해 주세요
+        <button onclick="insertT();">입력</button>
+    </div>
+    <script type="text/javascript">
+        function insertT() {
+            var dom = document.getElementById("name");
+            var newV = prompt("기억에 남는 글귀를 적어주세요.");
+            dom.value = newV;
+        }
+    </script>
+</body></html>

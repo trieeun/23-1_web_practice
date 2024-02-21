@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+    <style type="text/css">
+        .container {
+            padding: 20px;
+            margin: 0 0 0 40px;
+        }
+
+        .choice {
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1010px;
+            border: 1px solid rgb(237, 247, 245);
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0, 1);
+            margin-left: 10px;
+        }
+
+        .choice p {
+            text-align: justify;
+        }
+
+        .wrap {
+            width: 1200px;
+
+        }
+
+        .box {
+            float: left;
+        }
+
+        .wrap .box {
+            width: 30%;
+            height: 450px;
+            background-color: rgb(237, 247, 245);
+            padding: 20px;
+            box-sizing: border-box;
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .wrap>.box>.poster>img {
+            width: 100%;
+            height: 300px;
+        }
+
+        .wrap>.box>.text {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .wrap>p {
+            border
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            font-weight: 400;
+            line-height: 1.5;
+            margin: 0 0 0.8em 0;
+        }
+
+        h3 {
+            margin: 4px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .source {
+            font-size: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>영화 감상</h2>
+        <div class="choice">
+            <p>무엇인가 이해하려고 노력하지 않아도 그 시간 자체를 부담없이 즐길 수 있는 상업 영화를 좋아한다.<br> 그 중에서도 마블 영화를 좋아하는데 마블의 세계관과 인물들의 서사, 관계가 돋보이는 이야기를 좋아해서 쉬는 시간에 한 영화를 여러번 보기도 하고 관련 리뷰 영상들을 찾아보는 것을 즐긴다. 내가 특히 좋아하는 마블 영화들을 소개하고자 한다. <br>
+                <span class="source">사진 자료 출처 : NAVER 영화</span>
+            </p>
+        </div>
+            <div class="choice">
+    <form name="comment" action="" method="post">
+        <fieldset>
+            <legend>영화 코멘트</legend>
+닉네임 : <input type="text" name="u_name" size="20" maxlength="10">
+           <br>EMAIL : <input type="email" placeholder="**@**">
+            <hr>
+            <br>영화 선택: <input type="text" list="pp">
+            <datalist id="pp">
+                <option value="닥터스트레인지">
+                <option value="캡틴 아메리카:시빌워">
+                <option value="가디언즈 오브 갤럭시 vol2">
+                <option value="어벤져스:엔드게임">
+                <option value="토르:라그나로크">
+                <option value="어벤져스:인피니티 워">
+            </datalist>
+
+            <br>한줄평<br>
+            <textarea name="memo" rows="5" cols="70">
+            </textarea>
+            <br>
+            <input type="submit" value="작성하기"><input type="reset" value="취소하기">
+
+        </fieldset>
+
+    </form>
+    </div>
+        <div class="wrap">
+
+            <div class="clear"></div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common4-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>닥터스트레인지</h3>
+                    <p>★★★★☆</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common6-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>캡틴 아메리카:시빌워</h3>
+                    <p>★★★★☆</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common1-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>가디언즈 오브 갤럭시 vol2</h3>
+                    <p>★★★★★</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common3-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>어벤져스:엔드게임</h3>
+                    <p>★★★★☆</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common7-1-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>토르:라그나로크</h3>
+                    <p>★★★☆☆</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="poster">
+                    <img src="img/common5-1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>어벤져스:인피니티 워</h3>
+                    <p>★★★★★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>

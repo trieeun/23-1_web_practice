@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <style type="text/css">
+        .wrap {
+
+            margin: 0px auto;
+            padding: 20px;
+            width: 1280px;
+            height: auto;
+            background-color: rgb(237, 247, 245)
+        }
+
+        #header {
+            padding: 4em 4em 1em 4em;
+            text-align: center;
+        }
+
+        #header h1 {
+            margin: 0 0 0.25em 0;
+        }
+
+        #header p {
+            font-size: 1.25em;
+        }
+
+        #nav {
+            background-color: #ffffff;
+            width: 1250px;
+            padding: 1em;
+            background-color: rgb(183, 215, 216);
+            border-top-left-radius: 0.5em;
+            border-top-right-radius: 0.5em;
+            text-align: center;
+        }
+
+        #nav ul {
+
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #nav ul li {
+            display: inline-block;
+            margin: 0 0.35em;
+            padding: 0 50px;
+            vertical-align: middle;
+        }
+
+        li a {
+            color: #636363;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            color: rgb(255, 137, 132);
+        }
+
+        #article {
+            width: 1240;
+            height: 1000;
+            background-color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .frame {
+            padding: 1em;
+        }
+
+        #footer {
+            clear: both;
+            padding: 5px;
+            width: 100%;
+            margin: 2.5em 0 1em 0;
+            font-size: 0.8em;
+            text-align: center;
+
+        }
+
+        hr {
+            border: 0;
+            border-bottom: solid 1px;
+            margin: 2em 0;
+        }
+
+        hr.major {
+            margin: 3em 0;
+        }
+
+        hr {
+            border-bottom-color: rgba(255, 255, 255, 0.35);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header">
+            <span>
+                <img src="img/free-icon-woman-706816.png">
+            </span>
+            <h1>Hello!</h1>
+            <p>I'm Seyun Yang.</p>
+        </header>
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="food.html" target="view">food</a></li>
+
+                    <li><a href="music.html" target="view">music</a></li>
+
+                    <li><a href="movie.html" target="view">movie</a></li>
+
+                    <li><a href="book.html" target="view">book</a></li>
+
+                    <li><a href="prototyping.html" target="view">prototyping</a></li>
+                </ul>
+            </nav>
+        </div>
+        <article id="article">
+            <div class="frame">
+                <iframe name="view" width="1240" height="1000"></iframe>
+            </div>
+        </article>
+        <footer id="footer">
+            <div>Copyright(c) 2023. sy All rights reserved</div>
+        </footer>
+    </div>
+</body>
+
+</html>
